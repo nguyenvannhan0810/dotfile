@@ -15,6 +15,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 echo "--- Symlink zshrc"
-ln -sf "${PWD}/configs/.zshrc" "${HOME}"
+ln -sf $PWD/configs/.zshrc $HOME
 
 exec /bin/zsh

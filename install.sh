@@ -1,11 +1,10 @@
 #!/bin/sh
 
-echo "========== Setup VimRC =========="
-ln -sf "${PWD}/configs/.vimrc ${HOME}"
 
 while :
 do
     echo "========== START SETUP =========="
+    echo "0. Install Basic Setup (After Refresh MacOs)"
     echo "1. Install Xcode Select (Command Line Tools Package)"
     echo "2. Install Homebrew"
     echo "3. Instal Iterm2"
@@ -13,13 +12,17 @@ do
     echo "5. Install Font Source Code Pro"
     echo "6. Install Postman"
     echo "7. Install Sublime Text"
-    echo "0. Exit"
+    echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
     
     read inputOption
 
     case $inputOption in
+        0) 
+            echo "========== Setup VimRC =========="
+            ln -sf $PWD/configs/.vimrc $HOME
+            ;;
         1)
             echo "----- Instal Xcode Select -----"
             xcode-select --install
@@ -57,9 +60,9 @@ do
             brew install --cask sublime-text
             echo "----- # Install Sublime Text ------"
             ;;
-       	0) 
-	    break
-            ;;  
+        *) 
+            echo "Don not understand. Dont have action you choose. Please choose again!"
+            ;;
     esac
 done
 
