@@ -15,6 +15,8 @@ do
     echo "8. Install Mariadb"
     echo "9. Install Dnsmasq (Setup .test domain is localhost)"
     echo "10. Install Jetbrain Toolbox"
+    echo "11. Install Fast Node Management (fnm)"
+    echo "12. Install Composer"
     echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
@@ -91,6 +93,16 @@ do
             echo "----- Install Jetbrain Toolbox -----"
             brew install --cask jetbrains-toolbox
             echo "----- # Install Jetbrain Toolbox -----"
+            ;;
+        11) 
+            echo "----- Install FNM -----"
+            curl -fsSL https://fnm.vercel.app/install | bash
+            echo "----- # Install FNM -----"
+            ;;
+        12)
+            echo "----- Install Composer -----"
+            brew install composer
+            echo "----- # Install Composer -----"
             ;;
         *) 
             echo "Don not understand. Dont have action you choose. Please choose again!"

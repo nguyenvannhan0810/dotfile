@@ -99,3 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# fnm
+export PATH=/Users/nguyenvannhan/.fnm:$PATH
+eval "`fnm env`"
