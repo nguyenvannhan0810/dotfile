@@ -14,6 +14,7 @@ do
     echo "7. Install PHP (Many Version)"
     echo "8. Install Mariadb"
     echo "9. Install Dnsmasq (Setup .test domain is localhost)"
+    echo "10. Install Jetbrain Toolbox"
     echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
@@ -85,6 +86,11 @@ do
             chmod +x plugins/dnsmasq.sh
             ./plugins/dnsmasq.sh
             echo "----- # Setup DnsMasq -----"
+            ;;
+        10) 
+            echo "----- Install Jetbrain Toolbox -----"
+            brew install --cask jetbrains-toolbox
+            echo "----- # Install Jetbrain Toolbox -----"
             ;;
         *) 
             echo "Don not understand. Dont have action you choose. Please choose again!"
