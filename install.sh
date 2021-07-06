@@ -17,6 +17,8 @@ do
     echo "10. Install Jetbrain Toolbox"
     echo "11. Install Fast Node Management (fnm)"
     echo "12. Install Composer"
+    echo "13. Install Spectacle"
+    echo "14. Install Spotify"
     echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
@@ -103,6 +105,16 @@ do
             echo "----- Install Composer -----"
             brew install composer
             echo "----- # Install Composer -----"
+            ;;
+        13)
+            echo "----- Install Spectacle -----"
+            brew install --cask spectacle
+            echo "----- # Install Spectacle -----"
+            ;;
+        14)
+            echo "---- Install Spotify ----"
+            brew install --cask spotify
+            echo "---- # Install Spotify ----"
             ;;
         *) 
             echo "Don not understand. Dont have action you choose. Please choose again!"
