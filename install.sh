@@ -19,6 +19,7 @@ do
     echo "12. Install Composer"
     echo "13. Install Spectacle"
     echo "14. Install Spotify"
+    echo "15. Install NeoVim + Config"
     echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
@@ -116,6 +117,12 @@ do
             brew install --cask spotify
             echo "---- # Install Spotify ----"
             ;;
+        15)
+           echo "---- Install NeoVim ----"
+           chmod +x plugins/neovim.sh
+           ./plugins/neovim.sh
+           echo "---- # Install NeoVim ---"
+           ;;
         *) 
             echo "Don not understand. Dont have action you choose. Please choose again!"
             ;;

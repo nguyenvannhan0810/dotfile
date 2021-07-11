@@ -18,6 +18,9 @@ do
            
             brew services restart php@7.4
             brew services enable php@7.4
+
+            brew unlink php
+            brew link --overwrite php@7.4
             ;;
         0)
             break
