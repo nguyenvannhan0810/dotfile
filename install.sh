@@ -20,6 +20,7 @@ do
     echo "13. Install Spectacle"
     echo "14. Install Spotify"
     echo "15. Install NeoVim + Config"
+    echo "16. Install Alacritty"
     echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
@@ -122,6 +123,11 @@ do
            chmod +x plugins/neovim.sh
            ./plugins/neovim.sh
            echo "---- # Install NeoVim ---"
+           ;;
+        16)
+           echo "---- Install Alacritty ----"
+           brew install --cask alacritty
+           echo "---- # Install Alacritty ----"
            ;;
         *) 
             echo "Don not understand. Dont have action you choose. Please choose again!"
