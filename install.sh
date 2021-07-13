@@ -127,6 +127,7 @@ do
         16)
            echo "---- Install Alacritty ----"
            brew install --cask alacritty
+           ln -sf $PWD/configs/alacritty $HOME/.config/alacritty
            echo "---- # Install Alacritty ----"
            ;;
         *) 
