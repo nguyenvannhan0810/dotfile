@@ -10,7 +10,6 @@ Plug 'scrooloose/nerdtree' "  File Explorer
 Plug 'ryanoasis/vim-devicons' " Icons
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'vim-airline/vim-airline'
 Plug 'lilydjwg/colorizer'
 call plug#end()

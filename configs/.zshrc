@@ -105,3 +105,4 @@ export PATH=/Users/nguyenvannhan/.fnm:$PATH
 eval "`fnm env`"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

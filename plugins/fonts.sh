@@ -8,3 +8,6 @@ unzip release.zip
 cp -a source-code-pro-release/TTF/* ~/Library/Fonts
 rm -r source-code-pro-release
 rm release.zip
+
+# Font Fira code Nerd Font
+brew install font-fira-code-nerd-font

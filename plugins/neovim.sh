@@ -1,9 +1,6 @@
 brew install neovim
 
-echo "--- Install NERD Fonts ---"
-git clone https://github.com/ryanoasis/nerd-fonts.git
-chmod +x nerd-fonts/install.sh && ./nerd-fonts/install.sh
-sudo rm -r nerd-fonts
+ln -sf /usr/local/bin/nvim /usr/local/bin/vim
 
 echo "--- Install The Siver Searcher ---"
 brew install the_silver_searcher
