@@ -1,4 +1,0 @@
-{
-  "php-cs-fixer.toolPath": "php-cs-fixer",
-  "php-cs-fixer.config": "~/.config/nvim/.php_cs"
-} 
