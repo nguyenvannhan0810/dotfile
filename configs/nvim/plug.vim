@@ -21,6 +21,8 @@ if has("nvim")
   Plug 'akinsho/nvim-bufferline.lua'
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'kristijanhusak/defx-icons'
+  Plug 'majutsushi/tagbar'
+  Plug 'yggdroot/indentline'
 endif
 
 cal plug#end()

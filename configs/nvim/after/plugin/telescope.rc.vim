@@ -13,6 +13,7 @@ require('telescope').setup {
         ["q"] = actions.close
       },
     },
+    file_ignore_patterns = { 'node_modules', '.git', '.vscode', '.idea', 'vendor' }
   },
 }
 EOF

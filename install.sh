@@ -21,6 +21,7 @@ do
     echo "14. Install Spotify"
     echo "15. Install NeoVim + Config"
     echo "16. Install Alacritty"
+    echo "17. Install Tmux"
     echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
@@ -130,6 +131,12 @@ do
            ln -sf $PWD/configs/alacritty $HOME/.config/alacritty
            echo "---- # Install Alacritty ----"
            ;;
+        17)
+          echo "---- Install Tmux -----"
+          brew install tmux
+          ln -sf $PWD/configs/.tmux.conf $HOME/.tmux.conf
+          echo "---- # Install Tmux ----"
+          ;;
         *) 
             echo "Don not understand. Dont have action you choose. Please choose again!"
             ;;

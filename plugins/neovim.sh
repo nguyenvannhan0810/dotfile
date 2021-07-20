@@ -12,6 +12,9 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 echo "--- Install The Siver Searcher ---"
 brew install the_silver_searcher
 
+echo "--- Intall Universal CTags ----"
+brew install --HEAD universal-ctags
+
 if [ ! -d "${HOME}/.config" ]
 then
     mkdir $HOME/.config

@@ -14,6 +14,7 @@ do
     case $phpVersion in 
         1)
             brew install php@7.4
+            ln -sf $PWD/configs/php74.ini /usr/local/etc/php/7.4/php.ini
             ln -sf $PWD/configs/php74-fpm.conf /usr/local/etc/php/7.4/php-fpm.d/www.conf
            
             brew services restart php@7.4
