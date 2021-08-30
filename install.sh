@@ -98,7 +98,7 @@ do
             ;;
         11) 
             echo "----- Install FNM -----"
-            curl -fsSL https://fnm.vercel.app/install | bash
+            curl -fsSL https://fnm.vercel.app/install | bash --skip-shell
             echo "----- # Install FNM -----"
             ;;
         12)
