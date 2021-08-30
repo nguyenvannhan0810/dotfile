@@ -32,9 +32,6 @@ do
         0) 
             echo "========== Setup VimRC =========="
             ln -sf $PWD/configs/.vimrc $HOME
-            echo "----- Instal Xcode Select -----"
-            xcode-select --install
-            echo "----- # Instal Xcode Select -----"
             echo "----- Install Homebrew -----"
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
             echo "----- # Install Homebrew -----"
