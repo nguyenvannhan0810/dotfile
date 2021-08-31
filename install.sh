@@ -22,6 +22,7 @@ do
     echo "15. Install NeoVim + Config"
     echo "16. Install Alacritty"
     echo "17. Install Tmux"
+    echo "18. Install SDKMan"
     echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
@@ -98,7 +99,7 @@ do
             ;;
         11) 
             echo "----- Install FNM -----"
-            curl -fsSL https://fnm.vercel.app/install | bash --skip-shell
+            curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
             echo "----- # Install FNM -----"
             ;;
         12)
@@ -133,6 +134,11 @@ do
           brew install tmux
           ln -sf $PWD/configs/.tmux.conf $HOME/.tmux.conf
           echo "---- # Install Tmux ----"
+          ;;
+        18)
+          echo "---- Install SDKMan ----"
+          curl -s "https://get.sdkman.io?rcupdate=false" | bash
+          echo "---- # Install SDKMan ----"
           ;;
         *) 
             echo "Don not understand. Dont have action you choose. Please choose again!"
