@@ -1,8 +1,9 @@
 lua << EOF
 require('bufferline').setup {
   options = {
-    numbers = "buffer_id",
-    number_style = { "none", "subscript" },
+    numbers = function(opts) 
+      return string.format('%s', opts.id)
+    end
   }
 }
 

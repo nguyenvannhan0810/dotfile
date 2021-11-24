@@ -23,6 +23,7 @@ if has("nvim")
   Plug 'kristijanhusak/defx-icons'
   Plug 'majutsushi/tagbar'
   Plug 'yggdroot/indentline'
+  Plug 'folke/tokyonight.nvim'
 endif
 
 cal plug#end()

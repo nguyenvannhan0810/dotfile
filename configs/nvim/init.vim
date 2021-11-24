@@ -137,8 +137,8 @@ if exists("&termguicolors") && exists("&winblend")
   set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,eol:¬,precedes:«,extends:»
   set list
   " Use NeoSolarized
-  runtime ./colors/onedark.vim
-  colorscheme onedark
+  " runtime ./colors/onedark.vim
+  colorscheme tokyonight
 endif
 
 "}}}
