@@ -10,9 +10,12 @@ vim.opt.listchars = { tab = '→ ', space = '·', nbsp = '␣', trail = '•', e
 vim.opt.ignorecase = true
 vim.opt.list = true
 vim.opt.termguicolors = true
+vim.opt.shiftwidth=2
+vim.opt.tabstop=2
 
 
 vim.cmd[[syntax on]]
+vim.cmd[[set completeopt=menu,menuone,noselect]]
 
 vim.cmd[[autocmd FileType yaml setlocal shiftwidth=2 tabstop=2]]
 vim.cmd[[autocmd FileType vue setlocal shiftwidth=2 tabstop=2]]

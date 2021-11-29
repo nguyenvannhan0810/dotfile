@@ -16,9 +16,17 @@ return require('packer').startup(function()
   }
 
   use 'neovim/nvim-lspconfig'
-  --use 'nvim-lua/completion-nvim'
-  use 'hrsh7th/nvim-compe'
   use 'folke/tokyonight.nvim'
+
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+
+  -- For vsnip users.
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
 
   -- Post-install/update hook with neovim command
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }

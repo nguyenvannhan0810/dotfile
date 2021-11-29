@@ -38,10 +38,7 @@ function attach.on_attach(client, bufnr)
   --  vim.api.nvim_command [[autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_seq_sync()]]
   --  vim.api.nvim_command [[augroup END]]
   --end
-
-  -- Auto Complete Config
-  --require 'completion'.on_attach(client, bufnr)
-
+  --
   -- Setup Custom Auto Complete Icons
   protocol.CompletionItemKind = {
     '', -- Text
