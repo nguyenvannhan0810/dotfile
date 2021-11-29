@@ -16,4 +16,4 @@ vim.cmd[[syntax on]]
 
 vim.cmd[[autocmd FileType yaml setlocal shiftwidth=2 tabstop=2]]
 vim.cmd[[autocmd FileType vue setlocal shiftwidth=2 tabstop=2]]
-vim.cmd[[autocmd FileType php setlocal shiftwidth=4 tabstop=4]]
+vim.cmd[[autocmd FileType php setlocal shiftwidth=4 tabstop=4 iskeyword+=$]]

@@ -10,3 +10,4 @@ require('lualine-config')
 
 ------- Config Languge Server -----
 --require('lsp.lua-lsp')
+require('lsp.php-lsp')
