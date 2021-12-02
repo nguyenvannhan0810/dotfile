@@ -10,6 +10,9 @@ brew install the_silver_searcher
 echo "--- Intall Universal CTags ----"
 brew install --HEAD universal-ctags
 
+echo "---- Install RipGrep ----"
+brew install ripgrep
+
 if [ ! -d "${HOME}/.config" ]
 then
     mkdir $HOME/.config

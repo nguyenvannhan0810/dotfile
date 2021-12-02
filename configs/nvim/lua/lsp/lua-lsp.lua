@@ -19,6 +19,8 @@ end
 require'lspconfig'.sumneko_lua.setup {
     on_attach = attach.on_attach,
 
+    capabilities = attach.capabilities,
+
     cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
     settings = {
         Lua = {

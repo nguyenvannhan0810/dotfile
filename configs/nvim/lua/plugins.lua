@@ -27,19 +27,32 @@ return require('packer').startup(function()
   -- For vsnip users.
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  
+  -- Commentary
+  use 'b3nj5m1n/kommentary'
 
   -- Post-install/update hook with neovim command
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
+  -- Fuzzy Finder
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use 'nvim-telescope/telescope-fzy-native.nvim'
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
+  -- Header Footer Info Line
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
-
   use {
     'nvim-lualine/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
+
+  -- Syntax Highlight
+  use 'sheerun/vim-polyglot'
+  use "lukas-reineke/indent-blankline.nvim"
+
+  -- Terminal
+  use { 's1n7ax/nvim-terminal' }
 end)

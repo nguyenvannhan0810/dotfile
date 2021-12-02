@@ -69,4 +69,8 @@ function attach.on_attach(client, bufnr)
   }
 end
 
+-- Setup lspconfig.
+attach.capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+
 return attach

@@ -6,7 +6,7 @@ vim.g.mapleader = ' '
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', { noremap = true, silent = true })
 
 -- explorer
-vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>b', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 -- Better window movement
 vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { silent = true })
@@ -27,7 +27,3 @@ vim.api.nvim_set_keymap('n', '<S-TAB>', ':bprevious<CR>', { noremap = true, sile
 -- shift + j to move down
 vim.api.nvim_set_keymap('x', 'K', ':move \'<-2<CR>gv-gv', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('x', 'J', ':move \'>+1<CR>gv-gv', { noremap = true, silent = true })
-
--- Tab Completion
-vim.api.nvim_set_keymap('i', '<expr> <TAB>', 'pumvisible() ? \"\\<C-n>\" : \"\\<Tab>\"', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<expr> <S-TAB>', 'pumvisible() ? \"\\<C-p>\" : \"\\<Tab>\"', { noremap = true, silent = true })
