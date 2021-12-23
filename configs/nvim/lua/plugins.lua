@@ -17,6 +17,7 @@ return require('packer').startup(function()
 
   use 'neovim/nvim-lspconfig'
   use 'folke/tokyonight.nvim'
+  use 'morhetz/gruvbox'
 
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'

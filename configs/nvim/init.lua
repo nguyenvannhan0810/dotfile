@@ -1,7 +1,10 @@
 require('settings')
 require('plugins')
 require('keymappings')
-require('tokyo-night')
+---------- Color Schema ------------
+--require('tokyo-night')
+require('gruvbox-theme-config')
+
 require('telescope-config')
 require('nvim-treesitter-config')
 require('bufferline-config')
