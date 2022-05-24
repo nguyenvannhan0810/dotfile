@@ -23,6 +23,7 @@ do
     echo "16. Install Alacritty"
     echo "17. Install Tmux"
     echo "18. Install SDKMan"
+    echo "19. Install Docker"
     echo "Ctrl + c ToExit"
     echo "========== END SETUP =========="
     echo "Please choose one options"
@@ -140,9 +141,14 @@ do
           curl -s "https://get.sdkman.io?rcupdate=false" | bash
           echo "---- # Install SDKMan ----"
           ;;
+        19)
+          echo "------ Install Docker -----"
+          brew install --cask docker
+          echo "----- # Install Docker ----"
+          ;;
         *) 
-            echo "Don not understand. Dont have action you choose. Please choose again!"
-            ;;
+          echo "Don not understand. Dont have action you choose. Please choose again!"
+          ;;
     esac
 done
 
