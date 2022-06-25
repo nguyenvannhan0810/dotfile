@@ -3,7 +3,8 @@ require('plugins')
 require('keymappings')
 ---------- Color Schema ------------
 --require('tokyo-night')
-require('gruvbox-theme-config')
+--require('gruvbox-theme-config')
+require('sonokai-theme-config')
 
 require('telescope-config')
 require('nvim-treesitter-config')
@@ -11,6 +12,7 @@ require('bufferline-config')
 require('lualine-config')
 require('indent-blankline-config')
 require('terminal-config')
+require('gitsigns-config')
 
 --------- Comment Code ------------
 require('kommentary-config')
@@ -22,3 +24,4 @@ require('lsp.php-lsp')
 require('lsp.diagnosticls-lsp')
 require('lsp.vuels-lsp')
 require('lsp.tsserver-lsp')
+

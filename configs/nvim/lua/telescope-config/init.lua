@@ -1,6 +1,7 @@
 local actions = require('telescope.actions')
 
-vim.api.nvim_set_keymap('n', ';f', ':lua require(\'telescope.builtin\').find_files()<CR>', { noremap = true, silent = true }) 
+vim.api.nvim_set_keymap('n', ';f', ':lua require(\'telescope.builtin\').find_files({hidden=true})<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', ';g', ':lua require(\'telescope.builtin\').find_files({hidden=true,no_ignore=true})<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', ';r', ':lua require(\'telescope.builtin\').live_grep()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', ';\\', ':lua require(\'telescope.builtin\').buffers()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', ';;', ':lua require(\'telescope.builtin\').help_tags()<CR>', { noremap = true, silent = true })

@@ -17,7 +17,8 @@ return require('packer').startup(function()
 
   use 'neovim/nvim-lspconfig'
   use 'folke/tokyonight.nvim'
-  use 'morhetz/gruvbox'
+  --use 'morhetz/gruvbox'
+  use 'sainnhe/sonokai'
 
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -56,4 +57,10 @@ return require('packer').startup(function()
 
   -- Terminal
   use { 's1n7ax/nvim-terminal' }
+  
+  -- Git intergration
+  use {
+    'lewis6991/gitsigns.nvim',
+    -- tag = 'release' -- To use the latest release
+  }
 end)

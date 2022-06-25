@@ -27,5 +27,14 @@ require 'nvim-treesitter.configs'.setup {
   },
   autopairs = {
     enable = true
+  },
+  filters = {
+    dotfiles = true,
+    custom = {}
+  },
+  git = {
+    enable = true,
+    ignore = false,
+    timeout = 400
   }
 }

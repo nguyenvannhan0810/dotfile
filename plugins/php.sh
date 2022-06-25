@@ -1,7 +1,7 @@
 #!/bin/sh
 
 brew tap shivammathur/php
-brew upgrade icu4c
+brew install icu4c
 
 while : 
 do 
@@ -24,6 +24,7 @@ do
 
             brew unlink php
             brew link --overwrite --force php@8.0
+            ;;
         2)
             brew install shivammathur/php/php@7.4
             ln -sf $PWD/configs/php74.ini /usr/local/etc/php/7.4/php.ini
