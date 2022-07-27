@@ -12,10 +12,16 @@ return require('packer').startup(function()
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
-    config = function() require'nvim-tree'.setup {} end
   }
 
   use 'neovim/nvim-lspconfig'
+  use "williamboman/mason.nvim" 
+  use "williamboman/mason-lspconfig.nvim"
+  use({
+      "jose-elias-alvarez/null-ls.nvim",
+      requires = { "nvim-lua/plenary.nvim" },
+  })
+
   use 'folke/tokyonight.nvim'
   --use 'morhetz/gruvbox'
   use 'sainnhe/sonokai'
@@ -55,12 +61,18 @@ return require('packer').startup(function()
   use 'sheerun/vim-polyglot'
   use "lukas-reineke/indent-blankline.nvim"
 
-  -- Terminal
-  use { 's1n7ax/nvim-terminal' }
-  
   -- Git intergration
   use {
     'lewis6991/gitsigns.nvim',
     -- tag = 'release' -- To use the latest release
   }
+
+  -- Markdown Preview 
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  -- Terminal
+  use {"akinsho/toggleterm.nvim", tag = 'v2.*'}
 end)
