@@ -18,12 +18,14 @@ require('gitsigns-config')
 require('kommentary-config')
 
 ------- Config Languge Server -----
---require('nvim-cmp-config')
+require('nvim-cmp-config')
 --require('lsp.lua-lsp')
 --require('lsp.php-lsp')
 --require('lsp.diagnosticls-lsp')
 --require('lsp.vuels-lsp')
 --require('lsp.tsserver-lsp')
-require('lsp.mason')
 require('lsp.null-ls')
+require('lsp.mason')
 
+-------- TOGGLE TERM -------
+require('toggleterm-config')

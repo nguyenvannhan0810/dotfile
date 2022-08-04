@@ -75,4 +75,6 @@ return require('packer').startup(function()
 
   -- Terminal
   use {"akinsho/toggleterm.nvim", tag = 'v2.*'}
+  --Autopairs
+  use "windwp/nvim-autopairs"
 end)

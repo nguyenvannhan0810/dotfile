@@ -6,7 +6,8 @@ if not mason_status_ok or  not mason_lsp_status_ok then
 end
 
 local servers = {
-  "phpactor"
+  "phpactor",
+  "diagnosticls"
 }
 
 mason.setup()
