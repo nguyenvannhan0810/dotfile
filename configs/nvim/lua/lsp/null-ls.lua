@@ -13,7 +13,9 @@ null_ls.setup({
       formatting.stylua,
 
       -- PHP
-      formatting.phpcsfixer,
+      formatting.phpcsfixer.with({
+          extra_args = { "--rules=@PSR2,no_unused_imports,ordered_imports",  }
+      }),
       diagnostics.phpcs.with({
           extra_args = { "--standard=PSR2" }
       }),
